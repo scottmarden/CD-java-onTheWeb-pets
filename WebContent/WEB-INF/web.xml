@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <!-- Index route -->
+  <display-name>Pets</display-name>
+  <description>Pets application</description>
+  <servlet>
+    <servlet-name>CreationForm</servlet-name>
+    <servlet-class>com.scottmarden.pets.controllers.CreationForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreationForm</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Dog Creation Route -->
+  <display-name>Dog!</display-name>
+  <description>Dog created!</description>
+  <servlet>
+    <servlet-name>DogCreation</servlet-name>
+    <servlet-class>com.scottmarden.pets.controllers.DogCreation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DogCreation</servlet-name>
+    <url-pattern>/createDog</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Cat Creation Route -->
+  <display-name>Cat!</display-name>
+  <description>Cat created!</description>
+  <servlet>
+    <servlet-name>CatCreation</servlet-name>
+    <servlet-class>com.scottmarden.pets.controllers.CatCreation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CatCreation</servlet-name>
+    <url-pattern>/createCat</url-pattern>
+  </servlet-mapping>
+</web-app>
